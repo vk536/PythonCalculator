@@ -1,6 +1,10 @@
 import math
 
 
+def subtraction(a, b):
+    return b - a
+
+
 def addition(a, b):
     return a + b
 
@@ -15,3 +19,8 @@ class Calculator:
     def add(self, a, b):
         self.result = addition(int(a), int(b))
         return self.result
+
+    def sub(self, a, b):
+        self.result = subtraction(int(a), int(b))
+        return self.result
+
