@@ -5,6 +5,10 @@ def subtraction(a, b):
     return b - a
 
 
+def multiplication(a, b):
+    return a * b
+
+
 def addition(a, b):
     return a + b
 
@@ -22,5 +26,9 @@ class Calculator:
 
     def sub(self, a, b):
         self.result = subtraction(int(a), int(b))
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = multiplication(int(a), int(b))
         return self.result
 
