@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = Calculator()
 
-    def test_addition_method_calculator(self):
+    def test_addition_calculator(self):
         test_data = CsvReader("src/CsvTestFiles/Unit Test Addition.csv").data
         for row in test_data:
             result = int(row['Result'])
