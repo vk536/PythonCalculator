@@ -5,6 +5,10 @@ def division(a, b):
     return float(b/a)
 
 
+def square(a):
+    return a * a
+
+
 def subtraction(a, b):
     return b - a
 
@@ -39,6 +43,12 @@ class Calculator:
     def divide(self, a, b):
         self.result = round(division(int(a), int(b)), 7)
         return self.result
+
+    def squares(self, a):
+        self.result = square(int(a))
+        return self.result
+
+
 
 
 
