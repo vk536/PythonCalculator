@@ -43,6 +43,13 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.squares(row['Value 1']), result)
             self.assertEqual(self.calculator.result, result)
 
+    def test_sqrt_method_calculator(self):
+        test_data = CsvReader("src/CsvTestFiles/Unit Test Square Root.csv").data
+        for row in test_data:
+            result = round(float(row['Result']), 7)
+            self.assertEqual(self.calculator.square_root(row['Value 1']), result)
+            self.assertEqual(self.calculator.result, result)
+
 
 if __name__ == '__main__':
     unittest.main()
